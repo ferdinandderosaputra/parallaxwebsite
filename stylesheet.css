@@ -1,0 +1,88 @@
+html,
+body,
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+.parallax {
+  background-size: cover;
+  background-position: center;
+  background-attachment: fixed;
+  background-color: red;
+  width: 100%;
+  height: 100vh;
+}
+
+.intro {
+  background-image: url(1.jpg);
+}
+
+.content {
+  background-image: url(2.jpg);
+}
+
+.footer {
+  background-image: url(4.jpg);
+}
+
+.CTA {
+  display: flex;
+  justify-content: center; 
+  align-items: center;     
+  text-align: center;      
+  height: 100vh;          
+  width: 100vw;           
+}
+
+.title {
+  font-size: 4em;
+  letter-spacing: 20px;
+  font-family: fantasy;
+  color: white;
+}
+
+/* ini responsive btw sorry jelek lagi malessih */
+@media (max-width: 1200px) {
+  .title {
+    font-size: 3em;
+    letter-spacing: 15px;
+  }
+}
+
+@media (max-width: 900px) {
+  .title {
+    font-size: 2.5em;
+    letter-spacing: 10px;
+  }
+}
+
+@media (max-width: 600px) {
+  .title {
+    font-size: 1.8em;
+    letter-spacing: 5px;
+  }
+  .CTA {
+    height: auto; 
+    padding: 20px; 
+  }
+}
+
+/*remove scrollbar*/
+::-webkit-scrollbar {
+  display: none; 
+}
+
+html {
+  scrollbar-width: none;
+}
+
+.hide-scrollbar {
+  overflow: auto; 
+  scrollbar-width: none;
+}
+
+.hide-scrollbar::-webkit-scrollbar {
+  display: none;
+}
